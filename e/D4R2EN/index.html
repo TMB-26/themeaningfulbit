@@ -1,1 +1,102 @@
-Temporary
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#1c2421">
+<meta name="robots" content="noindex,nofollow">
+<title>Every road led me to you ♡</title>
+<style>
+:root{color-scheme:dark;--bg:#1c2421;--gold:#c7a778;--cream:#f0e3cd;--muted:#b9b49f}
+*{box-sizing:border-box}html{min-height:100%;background:var(--bg)}body{margin:0;min-height:100vh;color:var(--cream);font-family:Georgia,'Times New Roman',serif;display:grid;place-items:center;padding:24px 16px;background:radial-gradient(ellipse at 50% 8%,#344038 0%,transparent 65%),var(--bg)}
+main{position:relative;overflow:hidden;width:min(100%,540px);border:1px solid #9d835a88;border-radius:20px;padding:42px 26px 32px;text-align:center;background:#1c2421;box-shadow:0 18px 60px #0007}
+main:before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.22;background-image:repeating-radial-gradient(ellipse at 10% 15%,transparent 0 19px,#b89b6a 20px 21px,transparent 22px 39px);mask-image:linear-gradient(#000,transparent 85%)}
+.content{position:relative;z-index:1}.compass{font-size:35px;color:var(--gold);line-height:1}.eyebrow{font:600 10px/1.7 system-ui,sans-serif;letter-spacing:.23em;color:var(--gold);margin:18px 0 14px}h1{font-weight:400;font-size:clamp(31px,8vw,44px);line-height:1.16;margin:0 0 15px}h1 em{font-weight:400;color:var(--gold)}.rule{width:95px;height:1px;background:var(--gold);margin:20px auto 25px}.label{font:600 11px/1.5 system-ui,sans-serif;letter-spacing:.19em;color:var(--gold);text-transform:uppercase;margin-bottom:14px}.message{font-size:clamp(19px,5.3vw,23px);line-height:1.65;white-space:pre-line;overflow-wrap:break-word;min-height:135px}.footer{font:11px/1.8 system-ui,sans-serif;letter-spacing:.1em;color:var(--muted);margin-top:35px}.footer b{font-weight:500;color:var(--gold)}.mountains{height:76px;width:100%;margin:22px auto -4px;display:block;opacity:.8}.heart{color:var(--gold)}
+@media(prefers-reduced-motion:no-preference){main{animation:rise .6s ease-out}@keyframes rise{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}}
+</style>
+</head>
+<body>
+<main><div class="content">
+<div class="compass" aria-hidden="true">✧</div>
+<p class="eyebrow">OUR JOURNEY · EST. 02.11.2013</p>
+<h1>Every road<br><em>led me to you.</em> <span class="heart">♡</span></h1>
+<div class="rule"></div>
+<div class="label" id="label">A little bit of our story</div>
+<div class="message" id="message" aria-live="polite">Loading your message…</div>
+<svg class="mountains" viewBox="0 0 500 90" role="img" aria-label="Mountain and pine forest silhouette"><path fill="#b89b6a" d="M0 75 55 37 83 57 129 14 182 64 223 45 255 71 312 20 357 58 405 27 459 67 500 47 500 90H0Z"/><path fill="#777d67" d="M0 90V67l10-22 10 22h-7l9-15 9 22h-8l10 16Zm43 0 14-44 14 44Zm40 0 14-29 14 29Zm48 0 13-44 13 44Zm47 0 13-30 13 30Zm47 0 14-46 14 46Zm50 0 14-32 14 32Zm49 0 14-50 14 50Zm53 0 14-31 14 31Zm52 0 14-45 14 45Zm49 0 12-31 12 31Z"/></svg>
+<div class="footer">13 years married. A lifetime of adventures.<br><b>THE MEANINGFUL BIT ♡</b></div>
+</div></main>
+<script>
+'use strict';
+const messages = [
+  "Who would've thought one drunken night in Canberra, dirty dancing on the dance floor, would lead to all of this? 😂❤️",
+  "Two weeks of dating and I was already meeting your entire family at your brother's wedding. You certainly didn't waste any time!",
+  "We'd only been together about two months when you moved to Townsville. Somehow, 12 months apart didn't stop us building a future together.",
+  "Remember the day I flew up to Townsville to start our life together? I thought I was moving in with my boyfriend. Turns out I was coming home to my future husband.",
+  "I'll never forget your proposal. The surprise, the flowers you borrowed from the school garden and, of course, the ants all over the bed. 😂 Not exactly a fairytale, but definitely our story.",
+  "Our first house in Townsville wasn't just a property. It was where we started building a life that neither of us could've fully imagined back then.",
+  "From dirty dancing in Canberra to buying a house, getting engaged, having a baby and getting married. We really didn't believe in doing things slowly, did we? 😂",
+  "A month after our wedding, you were off to Afghanistan for six months. Not quite the usual newlywed experience, but we've never exactly followed the usual script.",
+  "Those six months you were deployed weren't easy. But coming out the other side was another chapter in the life we were building together.",
+  "When I think about our early married years, I think about how much we packed into such a short time. A home, a baby, a wedding, a deployment and so much change.",
+  "Then came your six-month course in Melbourne while I was pregnant with our second. Apparently, we liked adding a little extra difficulty to every chapter! 😂",
+  "Our two girls are pretty incredible reminders of what started with two Army people on a dance floor in Canberra.",
+  "We met in the Army, built a family through postings and separations, and eventually both found ourselves in the Air Force. What a journey Defence has taken us on.",
+  "There were times when Defence decided where we'd live, how long we'd be apart and what came next. But the life we've built through all of that is ours.",
+  "Townsville will always be special to me. Our first home, our first big leap together and the beginning of so many memories.",
+  "Then came Wagga. Another house, another posting and five years that gave us plenty of memories, lessons and challenges.",
+  "Wagga wasn't always our easiest chapter. But I don't want to forget that it's part of our story too, and part of how we got to where we are today.",
+  "From Townsville to Wagga to Sydney. Three places, so many changes and one very full life together.",
+  "How many kilometres do you reckon we've driven between postings and family visits? Enough to know we've spent a ridiculous amount of our marriage in the car! 😂",
+  "All those long drives to see family weren't always glamorous, but they're part of the memories I wouldn't want to lose.",
+  "We've explored so much of Australia together, and there's still a ridiculous amount left for us to see. I hope we never stop finding new places to go.",
+  "Fiji was another adventure to add to our collection. I love that our memories aren't all tied to one place — they're scattered across the country and beyond.",
+  "I wonder what those two people dancing in Canberra would've thought if someone had shown them a map of everywhere life would take them together.",
+  "We've had to say goodbye to some very special people and pets along the way. I wish they could all be here for the chapters we're still writing.",
+  "Losing your dad is a part of our story I wish we'd never had to experience. I know how much he meant to you, and I wish we had more time with him.",
+  "We've experienced some wonderful highs and some pretty difficult lows. I don't pretend we've always got everything right, but I value the history we've made together.",
+  "We've both changed since those early Army days. Sometimes I think about how much life we've already lived, and how much more there is still to discover.",
+  "Our girls are growing up, our lives keep changing and another chapter is always around the corner. I'm curious to see what comes next for us.",
+  "If our marriage were a road trip, it would have a few unexpected detours, some spectacular views, a couple of rough stretches and a whole lot of stories worth telling.",
+  "After everything — Canberra, Townsville, Afghanistan, Melbourne, Wagga, Sydney, the girls, the adventures and the hard times — here we are. And I still love you. ❤️",
+  "I swear you spend half your life buying things and the other half selling them. At this point, I'm not sure whether we're a family or a small trading business. 😂",
+  "One thing I know about you: if something can be bought, sold, swapped or turned into a deal, you'll probably find a way!",
+  "Every time you say you've found a good deal, I wonder whether I should be excited or concerned about what's about to arrive at our house. 😂",
+  "Your Meady shakes deserve their own warning label. Who looks at a collection of random ingredients, adds a raw egg and thinks, 'Yep, that'll be delicious'? 😂",
+  "After all these years, I still don't understand your Meady shakes. But I admire your commitment to drinking absolutely anything you can fit in a blender.",
+  "Some husbands make their wives breakfast in bed. Mine makes Meady shakes that look like a science experiment. Wouldn't have it any other way. 😂❤️",
+  "After 13 years of marriage and two kids, I'm pretty impressed we've managed to keep a little romance alive without an audience. 😂❤️",
+  "When I say, 'We need to talk about the plan,' we both know there's a very good chance no actual planning is about to happen. 😉❤️",
+  "Our girls probably think we're having very serious conversations about the future. If only they knew what 'the plan' sometimes means. 😂",
+  "I love that after all these years, we still have our own little codes, private jokes and moments that belong just to us. ❤️",
+  "From drunken dancing in Canberra to secret planning meetings 13 years later. Some things have changed, but apparently the chemistry hasn't. 😉",
+  "Our marriage has included deployments, postings, two daughters, property purchases, countless road trips, Meady shakes and a whole lot of buying and selling. You couldn't make this stuff up! 😂❤️",
+  "One thing I've always appreciated about you is how much you try to teach us. Whether it's something practical, something new or something completely unexpected, you're always trying to pass on what you know. ❤️",
+  "You taught all of us how to ride motorbikes. I love that you've given the girls experiences, skills and memories they'll carry with them long after they've grown up.",
+  "Not every family can say they've all been taught to ride motorbikes by Dad. You've certainly made sure our girls have had some adventures! 😂❤️",
+  "Remember our attempt at farm life? Tackling sheep so we could drench them! 😂 I don't think anyone could accuse us of not giving things a go.",
+  "From Army life to farm life, motorbikes to road trips — we've certainly tried a few different lifestyles together. And somehow there's always another adventure waiting.",
+  "I love that you're not someone who just talks about doing things. You get in there, have a go and usually manage to drag the rest of us along for the experience. 😂",
+  "The girls might not realise it yet, but every time you teach them something new, you're giving them confidence to try things for themselves. That's something pretty special. ❤️",
+  "When I think about our family, I don't just think about the places we've lived. I think about the things we've tried, the skills we've learnt and all those ridiculous little adventures that have become our memories.",
+  "GOOD MORNING, MY NEIGHBOURS! 😂 Some people wake up and say good morning like normal human beings. Then there's you.",
+  "MONICAAAAAAA! 😂 I don't think I'll ever be able to hear that name without hearing your voice in my head.",
+  "Between 'Good morning, my neighbours!' and 'Monicaaaaaa!', our household has its own very unique soundtrack. 😂❤️",
+  "One of the things I love about you is your ability to randomly come out with something ridiculous and make us laugh. Never lose that side of you. ❤️",
+  "From Meady shakes to random movie quotes, there's never a shortage of entertainment when you're around. 😂",
+  "If someone recorded all the random things you've said over the years, we'd probably have enough material for our own comedy show. And I'd still be laughing. ❤️"
+];
+const anniversaryMessage = "13 years of marriage, two kids, countless adventures and somehow we still put up with each other! 😂\n\nWe've had our share of bumps in the road, but I wouldn't trade the life we've built together.\n\nHere's to more adventures, more laughter, making memories and figuring out whatever life throws at us next.\n\nHappy anniversary. I love you. ❤️";
+// Use Sydney calendar dates, regardless of the device's timezone.
+const parts = new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Sydney',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+const get = type => Number(parts.find(p=>p.type===type).value);
+const year=get('year'), month=get('month'), day=get('day');
+const isAnniversary = month===11 && day===2;
+// Rotate on a calendar-day basis; each new day displays the next message.
+const dayNumber = Math.floor(Date.UTC(year,month-1,day)/86400000);
+const index = ((dayNumber % messages.length)+messages.length)%messages.length;
+document.getElementById('label').textContent = isAnniversary ? 'Happy anniversary ❤️' : 'A little bit of our story · '+String(index+1).padStart(2,'0')+' / '+messages.length;
+document.getElementById('message').textContent = isAnniversary ? anniversaryMessage : messages[index];
+</script>
+</body>
+</html>
